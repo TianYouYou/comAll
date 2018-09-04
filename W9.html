@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>W9</title>
+    <style>
+    *{padding: 0;margin: 0;}
+    #box{width: 1349px;height: 530px;background: rgba(0, 0, 0, 0.1);padding-top: 130px;position: relative;top: -590px;display: none;}
+    #box #tank{width: 400px;height: 400px;background: slateblue;margin: 0 auto;padding: 6px;}
+    #box #tank p{width: 20px;height: 20px;background: #ddd;text-align: center;line-height: 20px;color: #999;float: left;margin-right: 10px;cursor: pointer;}
+    input{width: 200px;height: 40px;border: none;background: tomato;margin: 60px;}
+    input:hover{background: indigo;}
+    input:active{background: greenyellow;border: none;}
+    button{width: 120px;height: 40px;border: none;background: springgreen;margin: 150px 60px;}
+    button:hover{background: blue;border: none;}
+    button:active{background: red;border: none;}
+    
+    </style>
+</head>
+<body>
+    <input type="text" value="" placeholder="你猜一下输入啥?"><br/><br/><br/><br/><br/>
+    <button>点下试试</button>
+    <div id="box">
+        <div id="tank">
+            <p id="close">X</p><span>关闭</span>
+        </div>
+    </div>
+    <script>
+    var oBtn = document.getElementsByTagName('button')[0];
+    var oBox = document.getElementById('box');
+    var oClose = document.getElementById('close');
+
+
+    oBtn.onclick = function(){
+        oBox.style.display="block";
+        // alert("ffff");
+    }
+    oClose.onclick = function(){
+        oBox.style.display="none";
+    }
+    </script>
+</body>
+</html>
