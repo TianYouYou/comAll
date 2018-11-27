@@ -1,0 +1,34 @@
+{
+  "albums":[
+    {
+      "name": "乐库",
+      "id":19723756,
+      "bg": "/static/img/yk.jpg"
+    },
+    {
+      "name": "歌单",
+      "id":3779629,
+      "bg":"/static/img/gd.jpg"
+    },
+    {
+      "name": "电台",
+      "id":2884035,
+      "bg":"/static/img/dt.jpg"
+    },
+    {
+      "name": "猜你喜欢",
+      "id":21845217,
+      "bg":"/static/img/cnxh.jpg"
+    },
+    {
+      "name": "每日推荐",
+      "id":4395559,
+      "bg":"/static/img/mrtj.jpg"
+    },
+    {
+      "name": "更多",
+      "id":98833242,
+      "bg":"/static/img/gduo.jpg"
+    }
+  ]
+}

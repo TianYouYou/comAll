@@ -1,0 +1,29 @@
+{
+  "albums":[
+    {
+      "name": "新图",
+      "id":19723756,
+      "bg": "/static/img/xintu.jpg"
+    },
+    {
+      "name": "附近",
+      "id":3779629,
+      "bg":"/static/img/fuj.jpg"
+    },
+    {
+      "name": "榜单",
+      "id":2884035,
+      "bg":"/static/img/bangd.jpg"
+    },
+    {
+      "name": "高清",
+      "id":4395559,
+      "bg":"/static/img/gaoq.jpg"
+    },
+    {
+      "name": "更多",
+      "id":98833242,
+      "bg":"/static/img/gengd.jpg"
+    }
+  ]
+}

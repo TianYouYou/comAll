@@ -1,0 +1,88 @@
+{
+    "musicData": [{
+      "title": "十年",
+      "author": "陈奕迅",
+      "src": "http://up.mcyt.net/md5/53/ODA0MDM=_Qq4329912.mp3",
+      "musicImgSrc": "https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3825361386,3954933951&fm=58",
+      "lrc": "/static/video/shinian.lrc"
+    },{
+      "title": "我们不该这样",
+      "author": "张赫宣",
+      "src": "/static/video/womwnbugaizheyang.mp4",
+      "musicImgSrc": "http://omratag7g.bkt.clouddn.com/%E6%88%91%E8%A6%81%E4%BD%A0.jpg",
+      "lrc": "/static/video/woyaoni.lrc"
+    }, {
+      "title": "九张机/双世宠妃",
+      "author": "叶炫清",
+      "src": "/static/video/jiuzhangji.mp4",
+      "musicImgSrc": "http://p4.music.126.net/34YW1QtKxJ_3YnX9ZzKhzw==/2946691234868155.jpg",
+      "lrc": "/static/video/chengdu.lrc"
+    }, {
+      "title": "以后的以后",
+      "author": "庄心妍",
+      "src": "/static/video/yihoudeyihou.mp4",
+      "musicImgSrc": "https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=1407964657,2382644691&fm=58",
+      "lrc": "/static/video/jiushiaini.lrc"
+    }, {
+      "title": "凉凉",
+      "author": "张碧晨/杨宗纬",
+      "src": "/static/video/liangiang.mp4",
+      "musicImgSrc": "http://imge.kugou.com/stdmusic/240/20131009/20131009143610650448.jpg",
+      "lrc": "/static/video/jiaruaiyoutianyi.lrc"
+    }, {
+      "title": "我的天空",
+      "author": "南征北战",
+      "src": "/static/video/wodetiankong.mp4",
+      "musicImgSrc": "https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3825361386,3954933951&fm=58",
+      "lrc": "/static/video/shinian.lrc"
+    }, {
+      "title": "光年之外",
+      "author": "邓紫棋",
+      "src": "/static/video/guangnianzhiwai.mp4",
+      "musicImgSrc": "http://p4.music.126.net/lDyytkTaPYVTb1Vpide6AA==/18591642115187138.jpg",
+      "lrc": "/static/video/ganghaoyujianni.lrc"
+    }, {
+      "title": "That Girl",
+      "author": "Olly Murs",
+      "src": "/static/video/That Girl.mp4",
+      "musicImgSrc": "http://p4.music.126.net/lDyytkTaPYVTb1Vpide6AA==/18591642115187138.jpg",
+      "lrc": "/static/video/ganghaoyujianni.lrc"
+    },{
+      "title": "我要你",
+      "author": "老狼",
+      "src": "http://up.mcyt.net/md5/53/OTkwNzUxMQ_Qq4329912.mp3",
+      "musicImgSrc": "http://omratag7g.bkt.clouddn.com/%E6%88%91%E8%A6%81%E4%BD%A0.jpg",
+      "lrc": "/static/video/woyaoni.lrc"
+    }, {
+      "title": "成都",
+      "author": "赵雷",
+      "src": "http://sc1.111ttt.com/2016/1/12/04/205041718593.mp3",
+      "musicImgSrc": "http://p4.music.126.net/34YW1QtKxJ_3YnX9ZzKhzw==/2946691234868155.jpg",
+      "lrc": "/static/video/chengdu.lrc"
+    }, {
+      "title": "就是爱你",
+      "author": "陶喆",
+      "src": "http://up.mcyt.net/md5/53/MTAzMTM1_Qq4329912.mp3",
+      "musicImgSrc": "https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=1407964657,2382644691&fm=58",
+      "lrc": "/static/video/jiushiaini.lrc"
+    }, {
+      "title": "假如爱有天意",
+      "author": "李健",
+      "src": "http://sc1.111ttt.com/2015/1/03/21/96212158145.mp3",
+      "musicImgSrc": "http://imge.kugou.com/stdmusic/240/20131009/20131009143610650448.jpg",
+      "lrc": "/static/video/jiaruaiyoutianyi.lrc"
+    },{
+      "title": "刚好遇见你",
+      "author": "李玉刚",
+      "src": "http://up.mcyt.net/md5/53/OTk1MDE2NA_Qq4329912.mp3",
+      "musicImgSrc": "http://p4.music.126.net/lDyytkTaPYVTb1Vpide6AA==/18591642115187138.jpg",
+      "lrc": "/static/video/ganghaoyujianni.lrc"
+    }, {
+      "title": "纸短情长",
+      "author": "烟把儿乐队",
+      "src": "/static/video/zhiduanqingchang.mp4",
+      "musicImgSrc": "http://p4.music.126.net/lDyytkTaPYVTb1Vpide6AA==/18591642115187138.jpg",
+      "lrc": "/static/video/ganghaoyujianni.lrc"
+    }]
+  }
+  

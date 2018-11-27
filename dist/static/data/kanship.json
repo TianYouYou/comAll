@@ -1,0 +1,172 @@
+{
+  "albums":[
+    {
+      "name": "Faded",
+      "star":"Alan Walker",
+      "id":3779629,
+      "bg":"/static/video/faded.mp4"
+    },{
+      "name": "告白气球",
+      "star":"周杰伦",
+      "id":19723756,
+      "bg": "/static/video/gaobaiqiqiu.mp4"
+    },
+    {
+      "name": "梦不落的雨林",
+      "star":"张艺兴",
+      "id":98833242,
+      "bg":"/static/video/mengbuluideyuling.mp4"
+    },{
+      "name": "羊(sheep)",
+      "star":"张艺兴",
+      "id":2884035,
+      "bg":"/static/video/sheep.mp4"
+    },
+    {
+      "name": "归去来兮",
+      "star":"叶炫清",
+      "id":4395559,
+      "bg":"/static/video/guiqulaixi.mp4"
+    },
+    {
+      "name": "梦不落的雨林",
+      "star":"张艺兴",
+      "id":98833242,
+      "bg":"/static/video/mengbuluideyuling.mp4"
+    },{
+      "name": "请先说你好",
+      "star":"贺一航",
+      "id":19723756,
+      "bg": "/static/video/qingxianshounihao.mp4"
+    },
+    {
+      "name": "体面",
+      "star":"于文文",
+      "id":3779629,
+      "bg":"/static/video/timiam.mp4"
+    },
+    {
+      "name": "That Girl",
+      "star":"Olly Murs",
+      "id":2884035,
+      "bg":"/static/video/That Girl.mp4"
+    },
+    {
+      "name": "没有你陪伴真的好孤",
+      "star":"单梦然",
+      "id":3779629,
+      "bg":"/static/video/meiyounipeiban.mp4"
+    },
+    {
+      "name": "《悲伤逆流成河》主题曲",
+      "star":"张韶涵",
+      "id":19723756,
+      "bg": "/static/video/ruhe.mp4"
+    },
+    {
+      "name": "光年之外",
+      "star":"邓紫棋",
+      "id":3779629,
+      "bg":"/static/video/guangnianzhiwai.mp4"
+    },
+    {
+      "name": "牧马城市",
+      "star":"毛不易",
+      "id":4395559,
+      "bg":"/static/video/mumachengshi.mp4"
+    },
+    {
+      "name": "再见青春",
+      "star":"任素汐",
+      "id":98833242,
+      "bg":"/static/video/zaijianqinhchun.mp4"
+    },{
+        "name": "我的天空",
+        "star":"南征北战",
+        "id":19723756,
+        "bg": "/static/video/wodetiankong.mp4"
+      },
+      {
+        "name": "凉凉",
+        "star":"张碧晨/杨宗纬",
+        "id":4395559,
+        "bg":"/static/video/liangiang.mp4"
+      },
+      {
+        "name": "倒数",
+        "star":"邓紫棋",
+        "id":98833242,
+        "bg":"/static/video/daoshu.mp4"
+      },
+      {
+        "name": "以后的以后",
+        "star":"庄心妍",
+        "id":98833242,
+        "bg":"/static/video/yihoudeyihou.mp4"
+      },
+      {
+        "name": "九张机/双世宠妃",
+        "star":"叶炫清",
+        "id":2884035,
+        "bg":"/static/video/jiuzhangji.mp4"
+      },
+      {
+        "name": "成都",
+        "star":"赵雷",
+        "id":4395559,
+        "bg":"/static/video/chengdu.mp4"
+      },
+      {
+        "name": "我们不该这样",
+        "star":"张赫宣",
+        "id":98833242,
+        "bg":"/static/video/womwnbugaizheyang.mp4"
+      },
+      {
+        "name": "画",
+        "star":"赵雷",
+        "id":98833242,
+        "bg":"/static/video/hua.mp4"
+      },{
+        "name": "当爱已成往事",
+        "star":"张国荣",
+        "id":19723756,
+        "bg": "/static/video/dangaiyichengwangshi.mp4"
+      },
+      {
+        "name": "海阔天空",
+        "star":"BEYONG",
+        "id":3779629,
+        "bg":"/static/video/zhendeaini.mp4"
+      },
+      {
+        "name": "海阔天空",
+        "star":"BEYONG",
+        "id":2884035,
+        "bg":"/static/video/haikuotiankong.mp4"
+      },
+      {
+        "name": "纸短情长",
+        "star":"烟把儿乐队",
+        "id":4395559,
+        "bg":"/static/video/zhiduanqingchang.mp4"
+      },
+      {
+        "name": "逆流成河",
+        "star":"金南玲",
+        "id":98833242,
+        "bg":"/static/video/niliuchenghe.mp4"
+      },{
+        "name": "双世宠妃",
+        "star":"贺景轩",
+        "id":2884035,
+        "bg":"/static/video/shuangshilianren.mp4"
+      },
+      {
+        "name": "漂洋过海来看你",
+        "star":"朱亚文/王丽坤",
+        "id":4395559,
+        "bg":"/static/video/piaoyangguohailaikanni.mp4"
+      }
+  ]
+}
