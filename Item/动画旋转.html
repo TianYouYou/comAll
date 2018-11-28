@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<style>
+    .bg {width: 260px;height: 420px;background: blueviolet;margin: 0 auto;}
+    .bg ul{width: 260px;height: 420px;position: absolute;overflow: hidden;}
+    .bg li{width: 120px;height: 120px;float: left;}
+    .bg .al1 img{position: relative;left: -12px;top: 30px; animation: myfirst1 5s linear 0s infinite alternate;}
+    .bg .al2 img{position: relative;left: 20px;top: -40px; animation: myfirst2 6s linear 0s infinite alternate;}
+    .bg .al3 img{position: relative;left: -10px;top: 90px; animation: myfirst3 6s linear 0s infinite alternate;}
+    .bg .al4 img{position: relative;left: 40px;top: 110px; animation: myfirst4 5s linear 0s infinite alternate;}   
+    @keyframes myfirst1{
+        0%{left: -12px;top:30px;}
+        50%{left: 8px;top:50px;}
+        100%{left: -12px;top:30px;}
+    }
+    @keyframes myfirst2{
+        0%{left: 20px;top:-40px;}
+        50%{left: 0px;;top:-20px;}
+        100%{left: 20px;top:-40px;}
+    }
+    @keyframes myfirst3{
+        0%{left: -10px;top:90px;}
+        50%{left: 10px;top:70px;}
+        100%{left: -10px;top:90px;}
+    }
+    @keyframes myfirst4{
+        0%{left: 40px;top:110px;}
+        50%{left: 20px;top:130px;}
+        100%{left: 40px;top:110px;}
+    }
+
+    .word p{float: left;position: relative;left: 50px;top:160px;font-size: 40px;font-weight: bold;color: #F10180;animation: myfirst5 0.4s linear 0s infinite alternate;}
+    @keyframes myfirst5{
+        0%{transform: rotate(0deg);}
+        50%{transform: rotate(10deg);transform-origin: center;}
+        100%{transform: rotate(0deg);}
+    }
+    
+    .ipt{position: relative;left: 50px;top:-55px;}
+    .ipt button{width: 60%;height: 25px;border-radius: 25px;border: none;background: #F10180;color: #fff;transition: 1s;}
+    .ipt button:hover{transform: scale(1.2);transform-origin: center;}
+
+</style>
+
+<body>
+    <div class="bg">
+    <ul>
+        <div class="word"><p>限</p><p>时</p><p>抢</p><p>购</p></div> <br>
+        <li class="al1" ><img src="images/ani_1.png" width="60%"><br></li>
+        <li class="al2" ><img src="images/ani_2.png" width="130%"><br></li>
+        <li class="al3" ><img src="images/ani_3.png" width="150%"><br></li>
+        <li class="al4" ><img src="images/ani_4.png" width="90%"><br></li>
+        <div class="ipt"><button>查看更多&nbsp;&nbsp;></button></div>
+    </ul>
+    </div>
+</body>
+
+</html>

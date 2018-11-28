@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        body {
+            background: #000;
+        }
+        all1{
+            position: relative;
+        }
+
+        #hx {
+            width: 100%;
+            height: 1px;
+            background: #555;
+            position:absolute;
+            top: 55%;
+        }
+
+        #all {
+            width: 100%;
+            height: 320px;
+            margin: 15% auto;
+            background: #000;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        #all li {
+            width: 1px;
+            height: 300px;
+            background: red;
+            line-height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="all1">
+        <div id="hx"></div>
+        <ul id="all">
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+        </ul>
+    </div>
+    <script>
+        var oLi = document.getElementsByTagName('li');
+        var oUl = document.getElementById('all');
+        var num;
+        var timer;
+
+        oUl.onmousemove = function(){
+            timer = setInterval(chWidth,1000);
+        }
+        oUl.onmouseout = function(){
+            clearInterval(timer);
+        }
+        
+        function chWidth(){
+            for(var i=0;i<oLi.length;i++){
+                num = parseInt(Math.random()*280+1);
+                oLi[i].style.height = num+'px';
+            }
+        }
+    </script>
+</body>
+</html>

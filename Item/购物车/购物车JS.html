@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #all {
+            width: 400px;
+            height: 500px;
+            background: rosybrown;
+            margin: 50px auto;
+            padding: 10px;
+        }
+
+        #all h1 {
+            text-align: center;
+        }
+
+        #all #list li {
+            width: 380px;
+            height: 50px;
+            margin-top: 10px;
+            line-height: 50px;
+            background: #ccc;
+            padding: 0 10px;
+        }
+
+        #all .allpri {
+            width: 400px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #all #list li .name {
+            float: left;
+        }
+
+        #all #list li .price {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="all">
+        <h1>购物车</h1>
+        <ul id="list">
+            <li><span class="name">华为</span><a class="price">3689</a></li>
+            <li><span class="name">小米</span><a class="price">3689</a></li>
+            <li><span class="name">苹果</span><a class="price">3689</a></li>
+            <li><span class="name">Dell</span><a class="price">3689</a></li>
+            <li><span class="name">惠普</span><a class="price">3689</a></li>
+            <li><span class="name">联想</span><a class="price">3689</a></li>
+            <li><span class="name">华硕</span><a class="price">3689</a></li>
+        </ul>
+        总价：￥<a id="allpri"></a>
+    </div>
+    <script>
+        var oLi = document.getElementsByTagName('li');
+        var oPri = document.getElementsByTagName('a');
+        var oAll = document.getElementById('allpri');
+
+       var sum =0;
+        for (var i = 0; i <= oLi.length; i++) {
+            oLi[i].index = i;
+            oLi[i].onclick = function () {
+                if (oLi[this.index].style.backgroundColor == 'red') {
+                    oLi[this.index].style.backgroundColor = '#ccc';
+                    sum -= parseInt(oPri[this.index].innerHTML);
+                    oAll.innerHTML=sum;
+                } else {
+                    oLi[this.index].style.backgroundColor = 'red';
+                    sum += parseInt(oPri[this.index].innerHTML);
+                    oAll.innerHTML=sum;
+
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

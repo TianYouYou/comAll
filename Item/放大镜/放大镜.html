@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{margin: 0; padding: 0;}
+
+    #small, #big{ float:left;}
+    #small{width: 512px; height: 320px; position: relative;}
+    #small #drag{width: 256px; height: 160px; background:rgba(192,188,176,.8); position: absolute; left:0; top: 0; display: none;}
+    #small #mask{ width:100%; height: 100%; background:rgba(255,0,0,0); position: absolute; left: 0; top: 0; }
+    #big{width: 512px; height: 320px; overflow:hidden; position: relative; display:none;}
+    #big img{position: absolute; left: 0; top: 0;}
+    </style>
+</head>
+<body>
+<div id="small">
+    <img src="img/s.jpg" />
+    <div id="drag"></div>
+    <div id="mask"></div>
+</div>
+
+<div id="big">
+    <img src="img/big.jpg" />
+</div>
+<script>
+var oSmall = document.getElementById("small");
+var oDrag = document.getElementById("drag");
+var oMask = document.getElementById("mask");//遮罩层
+var oBig = document.getElementById("big");
+var oBigImg = oBig.getElementsByTagName("img")[0];
+
+oMask.onmousemove = function(ev){
+    var e = ev || window.event;
+    //(一).oDrag只能在OMask的范围内移动
+    //使鼠标在oDrag中正中位置.
+    var left = e.clientX - oDrag.offsetWidth/2; 
+    var top = e.clientY - oDrag.offsetHeight/2;  
+
+    //oDrag只能在OMask的范围内移动
+    if(left<0) left=0;
+    if(top<0) top=0;
+    var maxX = oMask.offsetWidth - oDrag.offsetWidth;
+    var maxY = oMask.offsetHeight - oDrag.offsetHeight;
+    if(left>maxX) left = maxX;
+    if(top>maxY) top = maxY;
+
+    oDrag.style.left = left+"px";
+    oDrag.style.top = top+"px";
+
+    //console.log("drag: "+left, top);
+    //console.log("max: "+maxX, maxY);
+    //(二).放大镜效果
+    //大图和小图 实现等比例
+    var scaleX = left/maxX;
+    var scaleY = top/maxY;
+   // console.log("scale: "+scaleX, scaleY);
+    oBigImg.style.left = -(oBigImg.offsetWidth - oBig.offsetWidth)*scaleX+"px";
+    oBigImg.style.top = -(oBigImg.offsetHeight - oBig.offsetHeight)*scaleY+"px";
+
+/*注意:放大镜实现条件
+1, 大图和小图的比例是: 2:1;
+2, 小图与oDrag的比例是: 2:1;
+*/
+}
+
+oMask.onmouseover = function(){
+    oBig.style.display = "block";
+    oDrag.style.display = "block";
+}
+oMask.onmouseout = function(){
+    oBig.style.display = "none";
+    oDrag.style.display = "none";
+}
+</script>
+</body>
+</html>

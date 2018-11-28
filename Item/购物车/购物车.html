@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #app {
+            width: 400px;
+            margin: 50px auto;
+            background: pink;
+        }
+
+        #app h1 {
+            text-align: center;
+        }
+
+        #app #list li {
+            width: 380px;
+            height: 50px;
+            margin-top: 10px;
+            padding: 0 10px;
+            line-height: 50px;
+            background: #ccc;
+        }
+
+        #app #list li.Red {
+            background: red;
+        }
+        #app #del{float: left;margin-right: 10px;font-weight: lighter;}
+        #app #delAll{float: left;margin-right: 10px;}
+        #app .product-name {
+            float: left;
+        }
+        #app .product-price {
+            float: right;
+        }
+        
+        #app #totle{
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <h1>购物车</h1>
+        <hr />
+        <div>
+            <label for="">名称：<input type="text" v-model="name" placeholder="请输入商品名称！"></label><br>
+            <label for="">价格：<input type="text" v-model="price" placeholder="请输入商品价格！"></label>
+            <button @click="add">增加</button>
+        </div>
+        <div>
+            搜索：<label for=""><input type="text" v-model="keyword" placeholder="请输入关键字！"></label>
+            <button @click="search">搜索</button>
+        </div>
+        <ul id="list">
+            <li v-for="(product,index) in productList" :class="{Red:product.isRed}" @click="select(product)">
+                <span id="delAll"><input type="checkbox" @click.stop="" :value="index" v-model="checkbox" ></span>
+                <span id="del" @click.stop="del(index)">[x]</span>
+                <span class="product-name">{{index+1}}:{{product.name}}</span>
+                <span class="product-price">{{product.price}}</span>
+            </li>
+        </ul>
+        <div id="totle">
+            <!-- 总价: {{total}} --> <!--求总价的方法一-->
+            <button @click="delAll">删除选中</button>
+             结算: {{sum()}}
+        </div>
+    </div>
+    <script src="js/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                // cName: 'Red',
+                productList: [{
+                    'name': '华为',
+                    'price': '4500',
+                    isRed: false,
+                }, {
+                    'name': '小米',
+                    'price': '3248',
+                    isRed: false,
+                }, {
+                    'name': '苹果',
+                    'price': '1990',
+                    isRed: false,
+                }, {
+                    'name': '三星',
+                    'price': '4500',
+                    isRed: false,
+                }, {
+                    'name': '荣耀',
+                    'price': '2599',
+                    isRed: false,
+                }, {
+                    'name': 'Dell',
+                    'price': '4189',
+                    isRed: false,
+                }, {
+                    'name': '华硕',
+                    'price': '3588',
+                    isRed: false,
+                }, {
+                    'name': '惠普',
+                    'price': '2988',
+                    isRed: false,
+                }, ],
+                totle: 0,
+                name:'',
+                price:0,
+                keyword:'',//搜索商品的关键字
+                checkbox:[],//存入选中且要被删除的商品
+            },
+            methods: {
+                select(product,price){
+                    if(product.isRed==false){
+                        product.isRed=true;
+                        // this.totle += parseInt(product.price);
+                    }else{
+                        product.isRed=false;
+                        // this.totle -= parseInt(product.price);
+                        }
+                // product.isRed =!product.isRed;
+                   },
+                sum() {
+                    let sum = 0;
+                    this.productList.forEach(function (val, index) {
+                        if (val.isRed) {
+                            sum += parseInt(val.price);
+                            // console.log(index, val.name, val.price, val.isRed);
+                        }
+                    });
+                    return sum;
+                },
+                add(){
+                    this.productList.push({
+                        name:this.name,
+                        price:this.price,
+                    });
+                    this.name = '';
+                    this.price = 0;
+                },
+                search(){
+                    let arr = this.productList.filter((vel,index)=>{
+                        if (vel.name.includes(this.keyword)) {
+                            return vel;
+                        }
+                    });
+                    this.productList = arr;
+                },
+                del(index){
+                    this.productList.splice(index,1);
+                },
+                delAll(){
+                    let arr = this.productList.filter((vel,index)=>{
+                        if (!this.checkbox.includes(index)) {
+                            return vel;
+                        }
+                    });
+                    this.productList = arr;
+                    this.checkbox=[];
+                }
+
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body {background: #ADD8E6;}
+			#content {width: 900px;height: 600px;background: #FFC0CB;margin: auto;position: relative;}
+			#tip {width: 150px;height: 150px;background: #ADD8E6;position: absolute;left: 40px;top: 50px;border: 1px solid #88f;box-shadow: 4px 4px 8px #FC3155;border-radius: 4px;font-size: 16px;text-align: center;}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<div id="tip">啦啦！啦！啦啦！<br/>点两下试试！</div>
+		</div>
+		<script type="text/javascript">
+		for(var i=1;i<=10;i++){
+			var tip=document.getElementById("tip");
+			var content=document.getElementById("content");
+			var newTip=tip.cloneNode(true);
+			
+			var topValue=parseInt(Math.random()*400);
+			var leftValue=parseInt(Math.random()*700);
+			
+			newTip.style.top=topValue+"px";
+			newTip.style.left=leftValue+"px";
+			
+			content.appendChild(newTip);
+			newTip.onclick=fn;
+		}
+		tip.parentNode.removeChild(tip);
+		var tipArr=content.children;
+		for(var i=0;i<tipArr.length;i++){
+			tipArr[i].ondblclick=function(){
+				this.style.display="none";
+			}
+		}
+		var index=1;
+		function fn(){
+			this.style.zIndex=index;
+			index++;
+		}
+		</script>
+	</body>
+</html>

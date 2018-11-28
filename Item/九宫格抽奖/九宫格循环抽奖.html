@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>天赐早餐 随机享用</h1> 
+<div id="food">
+    <div id="close"></div>
+    <ul>
+        <li>
+            <dl>
+                <dt><img src="images/a (1).jpg" /></dt>
+                <dd>蛋黄月饼1</dd>
+            </dl>  
+        </li>
+        <li>
+            <dl>
+                <dt><img src="images/a (2).jpg" /></dt>
+                <dd>蛋黄月饼2</dd>
+            </dl>  
+        </li>
+        <li>
+            <dl>
+                <dt><img src="images/a (3).jpg" /></dt>
+                <dd>蛋黄月饼3</dd>
+            </dl>  
+        </li>
+        <li>
+            <dl>
+                <dt><img src="images/a (4).jpg" /></dt>
+                <dd>蛋黄月饼4</dd>
+            </dl>  
+        </li>
+        <li>
+            <dl>
+                <dt><img src="images/a (5).jpg" /></dt>
+                <dd>蛋黄月饼5</dd>
+            </dl>  
+        </li>
+        <li>
+            <dl>
+                <dt><img src="images/a (6).jpg" /></dt>
+                <dd>蛋黄月饼6</dd>
+            </dl>  
+        </li>
+        <li>
+            <dl>
+                <dt><img src="images/a (7).jpg" /></dt>
+                <dd>蛋黄月饼7</dd>
+            </dl>  
+        </li>
+        <li>
+            <dl>
+                <dt><img src="images/a (8).jpg" /></dt>
+                <dd>蛋黄月饼8</dd>
+            </dl>  
+        </li>
+        <li class="nine">
+            <dl>
+                <dt id="btn">
+                    <img src="images/start.jpg" id="pic" />
+                </dt>
+                <dd>9</dd>
+            </dl>  
+        </li>                  
+    </ul>
+</div>
+<script>
+//初始化变量:
+var oLi = document.getElementsByTagName("li");
+var oBtn = document.getElementById("btn");
+var oPic = document.getElementById("pic");
+var num=i=t=0; //计数器(顺时针)
+
+oBtn.onclick = function(){
+    oPic.style.transform = "scale(0.6)";
+    oPic.style.transition = "1s";
+
+    view(); //动画效果视图(view)
+}
+
+function view(){
+    num = parseInt(Math.random()*10 + 20);//确定顺时针循环Li个数(固定)
+    console.log('固定: '+num);
+
+    //一.确定循环次数(递归次数)
+    if(i < num){ //i: 已完成的Li循环个数(变化)
+        i++; //每循环完一个Li标签 +1
+        setTimeout(view, 200);
+        console.log("动态:= "+i);
+    }else{
+        i = 0; //为下一次抽奖做准备
+        oPic.style.transform = "scale(0.8)";
+        oPic.style.transition = "1s";
+    }
+
+    //二.动画 , t:顺时针循环中每个li标签的下标.
+    if(t < oLi.length-1 ){//先清除所有,再设置一个
+        for(var j=0; j<oLi.length-1; j++){
+            oLi[j].style.border = "2px solid #000";
+            oLi[j].style.background = "#fff";
+        }
+            
+        oLi[t].style.border = "2px solid #f00";
+        oLi[t].style.background = "rgba(255,0,0,.4)";
+        t++;
+    }else{
+        t = 0;
+    }
+}
+</script>
+</body>
+</html>

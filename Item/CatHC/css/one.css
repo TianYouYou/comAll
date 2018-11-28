@@ -1,0 +1,61 @@
+/* header开始 */
+header {width: 100%;background: white;float: left;}
+#htit img{float: left;}
+#htit p{width: 90%;text-align: center;line-height: 50px;font-size: 1.5rem;color: white;} 
+#htit {width: 100%;height: 50px;background: #E54847;}
+
+/* banner开始 */
+#banner{width: 100%;height: 240px;background: url(../images/bcsj.jpg) repeat-x center center;}
+#banner #con{width: 100%;height: 240px;background: rgba(80, 80, 80, 0.9);}
+
+#list{width: 100%;height: 110px;padding-top: 7%;display: flex;justify-content: space-around; align-items: center;}
+#list div{width: 30%;height: 100px;float: left;}
+#list #ltit{width: 48%;color: #eee;font-size: 0.4rem;}
+#list #ltit li{height: 20px;margin-top: 1%;}
+#list #ltit #ti p{float: left;}
+#list #ltit #ti p:nth-of-type(1){width: 100%;font-size: 1.4rem;font-weight: bold;}
+#list #ltit #ti1 p{float: left;}
+#list #ltit #ti1 p span{font-size: 1.2rem;font-weight: bold;color: #FFB400;}
+#list #ltit #ti3 p{width: 100%;float: left;}
+#list #ltit #ti3 p:nth-of-type(1){width: 50%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+#list #ltit #ti3 p:nth-of-type(2){width: 11%;height: 16px;background: #888;color: #eee;border-radius: 2px;line-height: 15px;}
+#list #ltit #ti3 p:nth-of-type(3){width: 24%;height: 16px;color: #888;border: 1px solid #888;box-sizing: border-box;text-align: center;line-height: 15px;margin-left: -1%;}
+#list #btn{width: 2%;line-height: 130px;text-align: left;}
+
+
+/* dnav开始 */
+#dnav{width: 100%;height: 40px; overflow: hidden;background: white;}
+#dnav ul{overflow-x: scroll;white-space: nowrap;overflow-y: hidden;}
+#dnav ul::-webkit-scrollbar{display: none;}
+#dnav li{width: 40%;height: 40px;font-size: 1rem;text-align: center;line-height: 40px;display: inline-block;box-sizing: border-box;border-bottom: 2px solid #ccc;margin-left: -1%;}
+#dnav li:nth-of-type(1){border-bottom: 2px solid #E54847;}
+
+/* dnav1开始 */
+#dnav1{width: 100%;height: 40px; overflow: hidden;border-bottom: 1px solid #ccc;background: white;}
+#dnav1 li{width: 33%;height: 40px;float: left;text-align: center;line-height: 40px;background: url(../images/gx.jpg)no-repeat left center;}
+
+/* main开始 */
+#mal {padding: 4%;height: 100px;}
+#mal #x{width: 100%;height: 1px;background: #eee;margin-top: 3%;}
+#mt{width: 100%;height: 30px;}
+#mt #mtr {width: 15%;font-size: 0.9rem;height: 20px;text-align: left;line-height: 20px;}
+#mt #mtl p a{font-size: 1rem;color: black;}
+#mt #mtl p a span{font-size: 1.1rem;color: #F03D37;}
+#mt #mtl p a span span{font-size:0.5rem;color: #F03D37;}
+#mt #mtl #add p{width: 80%;font-size: 0.9rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color: #444;}
+
+#mb ul{width: 100%;height: 20px;margin-top: -2%;}
+#mb li{float: left;margin-right: 1%;padding: 0 1%;height: 16px;line-height: 16px;color:#589DAF;border-radius: 12%;border: 1px solid #589DAF;}
+#mb li:nth-of-type(1){border-radius: 16%;}
+#mb li:nth-of-type(3){color:#FF9900;border: 1px solid #FF9900;}
+#mb li:nth-of-type(4){color:#FF9900;border: 1px solid #FF9900;}
+#mb li:nth-of-type(5){border-radius: 8%;}
+#mb li:nth-of-type(6){border-radius: 10%;}
+
+#mb p:nth-of-type(1){background: url(../images/ktu.jpg)no-repeat left center;padding-left: 10%;margin-top: 1%;}
+
+/* footer开始 */
+#dw{width: 92%;height: 35px;background:rgba(245, 245, 245, 0.9);position: fixed;bottom: 1%;left: 4%;border-radius: 6px;line-height: 35px;}
+
+
+
