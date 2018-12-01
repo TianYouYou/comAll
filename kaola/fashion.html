@@ -4,7 +4,18 @@
 	<meta charset="UTF-8">
 	<title>考拉时尚</title>
 	<link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/fashion.css">
+	<link rel="stylesheet" href="css/fashion.css">
+	
+	<link rel="stylesheet" href="css/aos.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <script src="js/aos.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>//aos
+		window.onload=function(){
+			new WOW().init();//初始化
+		}
+	</script>
 </head>
 <body>
 	<header>
@@ -165,36 +176,36 @@
 	</div>
 	<div id="side">
 		<ul>
-			<li><a href="#"><img src="images/k_cside1.png"></a></li>
-			<li><a href="#">美国博主</a></li>
-			<li><a href="#">英国博主</a></li>
-			<li><a href="#">法国博主</a></li>
-			<li><a href="#">意大利博主</a></li>
-			<li><a href="#">LOOKBOOK</a></li>
-			<li><a href="#">更多推荐</a></li>
-			<li><a href="#top"><img src="images/k_cside2.png"></a></li>
+			<li><a href="shopcar.html"><img src="images/k_cside1.png"></a></li>
+			<li><a href="#a1">美国博主</a></li>
+			<li><a href="#a2">英国博主</a></li>
+			<li><a href="#a3">法国博主</a></li>
+			<li><a href="#a4">意大利博主</a></li>
+			<li><a href="#a5">LOOKBOOK</a></li>
+			<li><a href="#a6">更多推荐</a></li>
+			<li id="top"><a href="#top"><img src="images/k_cside2.png"></a></li>
 		</ul>
 	</div>
     <main>
       <div id="main">
         <div class="mabozhu">
-            <div id="f_s"><a href="#"><img src="images/f_s1.jpg"></a></div>
-            <div id="f_s"><a href="#"><img src="images/f_s2.jpg"></a></div>
-        	<div id="f_s"><a href="#"><img src="images/f_s3.jpg"></a></div>
-        	<div id="f_s"><a href="#"><img src="images/f_s4.jpg"></a></div>
-        	<div id="f_s"><a href="#"><img src="images/f_s5.jpg"></a></div>
-        	<div id="f_s"><a href="#"><img src="images/f_s6.jpg"></a></div>
-        	<div id="f_s"><a href="#"><img src="images/f_s7.jpg"></a></div>
-        	<div id="f_s"><a href="#"><img src="images/f_s8.jpg"></a></div>
-        	<div id="f_s"><a href="#"><img src="images/f_s9.jpg"></a></div>
-        </div>
-
+            <div id="f_s" aos="zoom-in-up"><a href="#" name="a1"><img src="images/f_s1.jpg"></a></div>
+            <div id="f_s" aos="zoom-in-up"><a href="#"><img src="images/f_s2.jpg"></a></div>
+        	<div id="f_s" aos="zoom-in-up"><a href="#"><img src="images/f_s3.jpg"></a></div>
+        	<div id="f_s" aos="zoom-in-up"><a href="#" name="a2"><img src="images/f_s4.jpg"></a></div>
+        	<div id="f_s" aos="zoom-in-up"><a href="#" name="a3"><img src="images/f_s5.jpg"></a></div>
+        	<div id="f_s" aos="zoom-in-up"><a href="#" name="a4"><img src="images/f_s6.jpg"></a></div>
+        	<div id="f_s" aos="zoom-in-up"><a href="#"><img src="images/f_s7.jpg"></a></div>
+        	<div id="f_s" aos="zoom-in-up"><a href="#" name="a5"><img src="images/f_s8.jpg"></a></div>
+        	<div id="f_s" aos="zoom-in-up"><a href="#"><img src="images/f_s9.jpg"></a></div>
+		</div>
+		
 		<div class="tit"><p>更多推荐</p></div>
 		<div class="ma1_con">
 			<ul>
-				<li>
+				<li aos="flip-left">
 				    <img src="images/f_sgd1.jpg"><br/>
-				    <a href="#">美迪惠尔N.M.F针剂水库保湿面膜...</a>
+				    <a href="#" name="a6">美迪惠尔N.M.F针剂水库保湿面膜...</a>
 				    <a href="#"><p>补水网红，人人爱用</p></a>
 				    <div class="baoy">包邮</div>
 				    <p>￥65<span>￥169</span><button>立即购买</button></p>
@@ -204,12 +215,12 @@
 				    <div class="yiny">
 				    	<div class="yinl fl">
 				    	    <p>98.2%好评&nbsp;&nbsp;<span>❤❤❤❤❤</span></p>
-                            <marquee behavior="scroll" direction="left">这个东西我也不知道怎样，后果自负！</marquee>
+                            <marquee behavior="scroll" direction="left">时尚不仅仅仅是你的选取，更是我们的追求!</marquee>
 				    	</div>
 				    	<div class="yinr fr">172372条评论</div>
 				    </div>
 				</li>
-				<li>
+				<li aos="flip-left">
 				    <img src="images/f_sgd2.jpg"><br/>
 				    <a href="#">Naturie imju惠仁美白保湿防晒...</a>
 				    <a href="#"><p>我是大美人强推</p></a>
@@ -221,12 +232,12 @@
 				    <div class="yiny">
 				    	<div class="yinl fl">
 				    	    <p>98.6%好评&nbsp;&nbsp;<span>❤❤❤❤❤</span></p>
-                            <marquee behavior="scroll" direction="left">这个东西我也不知道怎样，后果自负！</marquee>
+                            <marquee behavior="scroll" direction="left">时尚不仅仅仅是你的选取，更是我们的追求!</marquee>
 				    	</div>
 				    	<div class="yinr fr">110101条评论</div>
 				    </div>
 				</li>
-				<li>
+				<li aos="flip-left">
 				    <img src="images/f_sgd3.jpg"><br/>
 				    <a href="#">Papa recipe春雨 蜜蜂补水保湿面...</a>
 				    <a href="#"><p>深深滋润缺水的肌肤</p></a>
@@ -238,12 +249,12 @@
 				    <div class="yiny">
 				    	<div class="yinl fl">
 				    	    <p>97.5%好评&nbsp;&nbsp;<span>❤❤❤❤❤</span></p>
-                            <marquee behavior="scroll" direction="left">这个东西我也不知道怎样，后果自负！</marquee>
+                            <marquee behavior="scroll" direction="left">时尚不仅仅仅是你的选取，更是我们的追求!</marquee>
 				    	</div>
 				    	<div class="yinr fr">98759条评论</div>
 				    </div>
 				</li>
-				<li>
+				<li aos="flip-left">
 				    <img src="images/f_sgd4.jpg"><br/>
 				    <a href="#">BIODERMA贝德玛 舒妍温和保湿...</a>
 				    <a href="#"><p>温和卸妆</p></a>
@@ -255,7 +266,7 @@
 				    <div class="yiny">
 				    	<div class="yinl fl">
 				    	    <p>98.8%好评&nbsp;&nbsp;<span>❤❤❤❤❤</span></p>
-                            <marquee behavior="scroll" direction="left">这个东西我也不知道怎样，后果自负！</marquee>
+                            <marquee behavior="scroll" direction="left">时尚不仅仅仅是你的选取，更是我们的追求!</marquee>
 				    	</div>
 				    	<div class="yinr fr">87871条评论</div>
 				    </div>
@@ -264,7 +275,7 @@
 		</div>
 		<div class="ma1_con">
 			<ul>
-				<li>
+				<li aos="flip-left">
 				    <img src="images/f_sgd5.jpg"><br/>
 				    <a href="#">BLACKMORES 维他命E面霜软膏...</a>
 				    <a href="#"><p>延缓肌肤衰老，祛皱美白</p></a>
@@ -276,12 +287,12 @@
 				    <div class="yiny">
 				    	<div class="yinl fl">
 				    	    <p>98.8%好评&nbsp;&nbsp;<span>❤❤❤❤❤</span></p>
-                            <marquee behavior="scroll" direction="left">这个东西我也不知道怎样，后果自负！</marquee>
+                            <marquee behavior="scroll" direction="left">时尚不仅仅仅是你的选取，更是我们的追求!</marquee>
 				    	</div>
 				    	<div class="yinr fr">32256条评论</div>
 				    </div>
 				</li>
-				<li>
+				<li aos="flip-left">
 				    <img src="images/f_sgd6.jpg"><br/>
 				    <a href="#">DoMeCare 欣兰 黑里透白冻膜 2...</a>
 				    <a href="#"><p>毛孔吸尘器</p></a>
@@ -293,12 +304,12 @@
 				    <div class="yiny">
 				    	<div class="yinl fl">
 				    	    <p>96.8%好评&nbsp;&nbsp;<span>❤❤❤❤❤</span></p>
-                            <marquee behavior="scroll" direction="left">这个东西我也不知道怎样，后果自负！</marquee>
+                            <marquee behavior="scroll" direction="left">时尚不仅仅仅是你的选取，更是我们的追求!</marquee>
 				    	</div>
 				    	<div class="yinr fr">606050条评论</div>
 				    </div>
 				</li>
-				<li>
+				<li aos="flip-left">
 				    <img src="images/f_sgd7.jpg"><br/>
 				    <a href="#">Balea芭乐雅 玻尿酸浓缩精华原液...</a>
 				    <a href="#"><p>改变美容方式</p></a>
@@ -310,12 +321,12 @@
 				    <div class="yiny">
 				    	<div class="yinl fl">
 				    	    <p>98.2%好评&nbsp;&nbsp;<span>❤❤❤❤❤</span></p>
-                            <marquee behavior="scroll" direction="left">这个东西我也不知道怎样，后果自负！</marquee>
+                            <marquee behavior="scroll" direction="left">时尚不仅仅仅是你的选取，更是我们的追求!</marquee>
 				    	</div>
 				    	<div class="yinr fr">34739条评论</div>
 				    </div>
 				</li>
-				<li>
+				<li aos="flip-left">
 				    <img src="images/f_sgd8.jpg"><br/>
 				    <a href="#">EitaDM 氨基酸泡沫卸妆洁面乳...</a>
 				    <a href="#"><p>温和净肤</p></a>
@@ -327,7 +338,7 @@
 				    <div class="yiny">
 				    	<div class="yinl fl">
 				    	    <p>97.8%好评&nbsp;&nbsp;<span>❤❤❤❤❤</span></p>
-                            <marquee behavior="scroll" direction="left">这个东西我也不知道怎样，后果自负！</marquee>
+                            <marquee behavior="scroll" direction="left">时尚不仅仅仅是你的选取，更是我们的追求!</marquee>
 				    	</div>
 				    	<div class="yinr fr">12547条评论</div>
 				    </div>
@@ -336,7 +347,7 @@
 		</div>
 		<div class="ma1_con">
 			<ul>
-				<li>
+				<li aos="flip-left">
 				    <img src="images/f_sgd9.jpg"><br/>
 				    <a href="#">BIODERMA贝德玛 舒妍温和保湿...</a>
 				    <a href="#"><p>温和卸妆</p></a>
@@ -348,12 +359,12 @@
 				    <div class="yiny">
 				    	<div class="yinl fl">
 				    	    <p>98.6%好评&nbsp;&nbsp;<span>❤❤❤❤❤</span></p>
-                            <marquee behavior="scroll" direction="left">这个东西我也不知道怎样，后果自负！</marquee>
+                            <marquee behavior="scroll" direction="left">时尚不仅仅仅是你的选取，更是我们的追求!</marquee>
 				    	</div>
 				    	<div class="yinr fr">165672条评论</div>
 				    </div>
 				</li>
-				<li>
+				<li aos="flip-left">
 				    <img src="images/f_sgd10.jpg"><br/>
 				    <a href="#">Naturie imju惠仁美白保湿防晒...</a>
 				    <a href="#"><p>我是大美人强推</p></a>
@@ -365,12 +376,12 @@
 				    <div class="yiny">
 				    	<div class="yinl fl">
 				    	    <p>98.6%好评&nbsp;&nbsp;<span>❤❤❤❤❤</span></p>
-                            <marquee behavior="scroll" direction="left">这个东西我也不知道怎样，后果自负！</marquee>
+                            <marquee behavior="scroll" direction="left">时尚不仅仅仅是你的选取，更是我们的追求!</marquee>
 				    	</div>
 				    	<div class="yinr fr">56581条评论</div>
 				    </div>
 				</li>
-				<li>
+				<li aos="flip-left">
 				    <img src="images/f_sgd11.jpg"><br/>
 				    <a href="#">网易自营 品牌授权 补水保湿面...</a>
 				    <a href="#"><p>RAY蚕丝面膜</p></a>
@@ -382,12 +393,12 @@
 				    <div class="yiny">
 				    	<div class="yinl fl">
 				    	    <p>98.5%好评&nbsp;&nbsp;<span>❤❤❤❤❤</span></p>
-                            <marquee behavior="scroll" direction="left">这个东西我也不知道怎样，后果自负！</marquee>
+                            <marquee behavior="scroll" direction="left">时尚不仅仅仅是你的选取，更是我们的追求!</marquee>
 				    	</div>
 				    	<div class="yinr fr">98759条评论</div>
 				    </div>
 				</li>
-				<li>
+				<li aos="flip-left">
 				    <img src="images/f_sgd12.jpg"><br/>
 				    <a href="#">DoMeCare 欣兰 黑里透白冻膜...</a>
 				    <a href="#"><p>美白提亮 深层清洁毛孔</p></a>
@@ -399,7 +410,7 @@
 				    <div class="yiny">
 				    	<div class="yinl fl">
 				    	    <p>98.8%好评&nbsp;&nbsp;<span>❤❤❤❤❤</span></p>
-                            <marquee behavior="scroll" direction="left">这个东西我也不知道怎样，后果自负！</marquee>
+                            <marquee behavior="scroll" direction="left">时尚不仅仅仅是你的选取，更是我们的追求!</marquee>
 				    	</div>
 				    	<div class="yinr fr">65561条评论</div>
 				    </div>
@@ -532,6 +543,51 @@
 				<li><a href="#"><img id="ppc" src="images/fpic3.gif"></a></li>
             </ul>
 		</div>
-	</footer>	
+	</footer>
+	<script src="./js/index.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+	(function(){
+    $(document).scroll(function(){
+        var y = $(document).scrollTop();
+        var topM = $("#side").height()+10;   
+        var winHeight = $(window).height();  //可视高度  
+
+        if(y > topM){
+            if(y > winHeight*1.8){
+				$("#side").fadeIn();
+            }else{
+				$("#side").fadeOut();
+            }
+          
+        }
+	});
+	$("#top").click(function(){
+            var y = $(document).scrollTop();
+            var timer=null;
+            function goBack(){
+                y = (y*9.4)/10;
+                $(document).scrollTop(y);
+                
+                if(y<1){
+                    $(document).scrollTop(0);
+                    clearInterval(timer);
+                }
+                console.log(y);
+            }
+            
+           timer = setInterval(goBack, 8);
+         });
+     })();
+	</script>
+	
+	
+	 
+	<script>//aos
+	    AOS.init({
+	    		easing: 'ease-out-back',
+	    		duration: 1000
+	    	});
+	</script>	
 </body>
 </html>

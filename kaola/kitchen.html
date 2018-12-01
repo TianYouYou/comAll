@@ -4,7 +4,19 @@
 	<meta charset="UTF-8">
 	<title>考拉厨具</title>
 	<link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/kitchen.css">
+	<link rel="stylesheet" href="css/kitchen.css">
+	
+	<link rel="stylesheet" href="css/aos.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <script src="js/aos.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>//aos
+		window.onload=function(){
+			new WOW().init();//初始化
+		}
+	</script>
+
 </head>
 <body>
 	<header>
@@ -1343,6 +1355,13 @@
 				<li><a href="#"><img id="ppc" src="images/fpic3.gif"></a></li>
             </ul>
 		</div>
-	</footer>	
+	</footer>
+	
+	<script>//aos
+		AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+	</script>
 </body>
 </html>

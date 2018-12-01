@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>网易考拉</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/aos.css" />
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
     <script src="js/aos.js"></script>
@@ -13,8 +15,6 @@
 			new WOW().init();//初始化
 		}
 	</script>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/index.css">
 	
 </head>
 <body>
@@ -1388,7 +1388,7 @@
 		</ul>
 	</div>
 	<main>
-		<div id="maone" >
+		<div id="maone" aos="flip-left">
 			<ul>
 				<li><a href="#"><img src="images/one1.jpg"></a></li>
 				<li><a href="#"><img src="images/one2.jpg"></a></li>
@@ -1396,7 +1396,7 @@
 				<li><a href="#"><img src="images/one4.jpg"></a></li>
 			</ul>
 		</div><!--推荐-->
-		<div id="matwo">
+		<div id="matwo" aos="flip-right">
 			<div class="mat_tit">
 			    <div class="mat_titl fl">
 			        <h1 class="fl">今日限时购</h1>
@@ -1488,7 +1488,7 @@
 				<div class="mat_conr fr"><img src="images/conb1.png"></div>
 			</div>
 		</div><!--今日限时购-->
-		<div id="mathree">
+		<div id="mathree" aos="flip-left">
 			<div class="mat_tit">
 			    <div class="mat_titl fl">
 			        <h1 class="fl">今日上新</h1>
@@ -1544,7 +1544,7 @@
 				</ul>
 			</div>
 		</div><!--今日上新-->
-		<div id="mafor">
+		<div id="mafor"  aos="flip-right">
 			<div class="mat_tit">
 			    <div class="mat_titl fl">
 			        <h1 class="fl">热门品牌</h1>
@@ -1596,7 +1596,7 @@
 				</div>
 			</div>
 		</div><!--热门品牌-->
-		<div id="mafiv">
+		<div id="mafiv" aos="flip-left">
 			<div class="mat_tit">
 			    <div class="mat_titl fl">
 			        <h1 class="fl" >母婴专区</h1>
@@ -1703,7 +1703,7 @@
 				</div>
 			</div>
 		</div><!--母婴专区-->
-		<div id="mafiv">
+		<div id="mafiv" aos="flip-right">
 			<div class="mat_tit">
 			    <div class="mat_titl fl">
 			        <h1 class="fl">美容彩妆</h1>
@@ -1810,7 +1810,7 @@
 				</div>
 			</div>
 		</div><!--美容彩妆-->
-		<div id="mafiv">
+		<div id="mafiv" aos="flip-left">
 			<div class="mat_tit">
 			    <div class="mat_titl fl">
 			        <h1 class="fl">服饰鞋包</h1>
@@ -1917,7 +1917,7 @@
 				</div>
 			</div>
 		</div><!--服饰鞋包-->
-		<div id="mafiv">
+		<div id="mafiv" aos="flip-right">
 			<div class="mat_tit">
 			    <div class="mat_titl fl">
 			        <h1 class="fl">家居个护</h1>
@@ -2024,7 +2024,7 @@
 				</div>
 			</div>
 		</div><!--家居个护-->
-		<div id="mafiv">
+		<div id="mafiv" aos="flip-left">
 			<div class="mat_tit">
 			    <div class="mat_titl fl">
 			        <h1 class="fl">营养保健</h1>
@@ -2131,7 +2131,7 @@
 				</div>
 			</div>
 		</div><!--营养保健-->
-		<div id="mafiv">
+		<div id="mafiv" aos="flip-down">
 			<div class="mat_tit">
 			    <div class="mat_titl fl">
 			        <h1 class="fl">数码家电</h1>
@@ -2238,7 +2238,7 @@
 				</div>
 			</div>
 		</div><!--数码家电-->
-		<div id="mafiv">
+		<div id="mafiv" aos="flip-left">
 			<div class="mat_tit">
 			    <div class="mat_titl fl">
 			        <h1 class="fl">户外运动</h1>
@@ -2345,7 +2345,7 @@
 				</div>
 			</div>
 		</div><!--运动户外-->
-		<div id="masix">
+		<div id="masix" aos="zoom-in-up">
 			<div class="mat_tit">
 			    <div class="mat_titl fl">
 			        <h1 class="fl">猜你喜欢</h1>
@@ -2547,5 +2547,11 @@
      })();
 	</script>
 
+    <script>
+	AOS.init({
+			easing: 'ease-out-back',
+			duration: 1000
+		});
+    </script>
 </body>
 </html>

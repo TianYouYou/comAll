@@ -1,3 +1,4 @@
+   
    (function(){
     var oPic=document.getElementById("pic");
     var oImg=oPic.getElementsByTagName("img");
@@ -32,6 +33,9 @@
     go();
    })();
 
+   //轮播结束
+
+   
 
    
    
