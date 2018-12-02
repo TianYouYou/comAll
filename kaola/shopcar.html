@@ -460,6 +460,47 @@
 				<li><a href="#"><img id="ppc" src="images/fpic3.gif"></a></li>
             </ul>
 		</div>
-	</footer>	
+	</footer>
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+	(function(){
+    $(document).scroll(function(){
+        var y = $(document).scrollTop();
+        var topM = $("#main1").height()+10;   
+        var winHeight = $(window).height();  //可视高度  
+
+        if(y > topM){
+
+            if(y > winHeight*1.8){
+				$("#side").fadeIn();
+            }else{
+				$("#side").fadeOut();
+            }
+          
+        }
+	});
+	$("#side").click(function(){
+            var y = $(document).scrollTop();
+            var timer=null;
+            function goBack(){
+                y = (y*9.4)/10;
+                $(document).scrollTop(y);
+                
+                if(y<1){
+                    $(document).scrollTop(0);
+                    clearInterval(timer);
+                }
+                console.log(y);
+            }
+            
+           timer = setInterval(goBack, 8);
+         });
+     })();
+	</script>
+
+	<script>
+		
+	</script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 body{background: #fff;}
 
-#side{width: 35px;height: 105px;background: #fff;border: 1px solid #aaa;position: fixed;bottom: 60px;right: 60px;}
+#side{width: 35px;height: 105px;background: #fff;border: 1px solid #aaa;position: fixed;bottom: 200px;right: 60px;display: none;}
 
 main{height: 2160px;}
 #main1{width: 1100px;height: 40px;margin: 0 auto;}
