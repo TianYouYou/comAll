@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="橙子vr是一款提供沉浸式3D视频播放、VR游戏下载、VR硬件评测资讯的虚拟现实内容聚合平台。">
+    <meta name="keywords" content="橙子vr,供沉浸式3D视频播放, VR游戏下载, VR硬件">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>橙子VR</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="#"><img src="img/logo.jpg" width="66%"></a></div>
+        <ul id="head">
+            <li class="on">推荐</li>
+            <li>大片</li>
+            <li>游戏</li>
+            <li>关注</li>
+        </ul>
+        <div class="search"><a href="#"><img src="img/icon1.png" width="45%"></a></div>
+    </header>
+
+    <main>
+    <div id="container">
+        <div id="imgs">
+            <img src="img/banner1.jpg" class="one" >
+            <img src="img/banner2.jpg" >
+            <img src="img/banner3.jpg" >
+            <img src="img/banner4.jpg" >
+            <img src="img/banner5.jpg" >
+        </div>
+        <ul id="nav">
+            <li class="one">•</li>
+            <li>•</li>
+            <li>•</li>
+            <li>•</li>
+            <li>•</li>
+        </ul>
+    </div> 
+    <ul class="ico">
+        <li><a href="#"><img src="img/ico5.png">热更</a></li>
+        <li><a href="#"><img src="img/ico7.png">品牌</a></li>
+        <li><a href="#"><img src="img/ico10.png">互动</a></li>
+        <li><a href="#"><img src="img/ico13.png">商城</a></li>
+        <li><a href="#"><img src="img/ico1.png">挑战</a></li>
+    </ul>
+    <ul class="file">
+        <li><img src="img/4a.jpg" width="100%"><p>微观世界旅行</p></li>
+        <li><img src="img/5a.jpg" width="100%"><p>时间之旅</p></li>
+        <li><img src="img/6a.jpg" width="100%"><p>动画中的墨西哥</p></li>
+        <li><img src="img/7a.jpg" width="100%"><p>萌宠来袭</p></li>
+        <li><img src="img/8a.jpg" width="100%"><p>万圣节恐怖指南</p></li>
+        <li><img src="img/9a.jpg" width="100%"><p>DoPro极限运动</p></li>
+        <li><p>查看全部</p><p>view more</p></li>
+    </ul>
+
+    </main>
+
+    <footer>
+        <ul id="foot">
+            <li>
+                <a href="#">
+                    <img class="a" src="img/icon2.png" width="38%">
+                    <img class="b" src="img/icon2-1.png" width="38%">
+                </a>
+                <p>首页</p>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="a" src="img/icon3.png" width="38%">
+                    <img class="b" src="img/icon3-1.png" width="38%">
+                </a>
+                <p>视屏</p>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="a" src="img/icon4.png" width="38%">
+                    <img class="b" src="img/icon4-1.png" width="38%">
+                </a>
+                <p>沉浸</p>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="a" src="img/icon5.png" width="38%">
+                    <img class="b" src="img/icon5-1.png" width="38%">
+                </a>
+                <p>发现</p>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="a" src="img/icon6.png" width="38%">
+                    <img class="b" src="img/icon6-1.png" width="38%">
+                </a>
+                <p>我的</p>
+            </li>
+        </ul>
+    </footer>
+
+    <script>
+        let oLi = document.getElementById('head').getElementsByTagName('li');
+        for (var i = 0; i < oLi.length; i++) {
+            oLi[i].index = i;
+            oLi[i].onclick = function () {
+                empty();
+                oLi[this.index].className = "on";
+            }
+        }
+
+        function empty() {
+            for (var j = 0; j < oLi.length; j++) {
+                oLi[j].className = '';
+            }
+        }
+    </script>
+    <script>
+        (function(){
+        
+        var container=document.getElementById("container");
+        var oImgs = document.getElementById("imgs").getElementsByTagName("img");
+        var oLis = document.getElementById("nav").getElementsByTagName("li");
+        var oLeft = document.getElementById("left");
+        var oRight = document.getElementById("right");
+        
+        var now = 0;
+        var timer = null;
+        for(var i=0; i<oLis.length; i++){
+            oLis[i].index = i;
+            oLis[i].onmouseover = function(){
+            now = this.index;
+              play();
+            }
+        }
+        function play(){
+            show();  
+        
+            now++;
+            if(now == oImgs.length) now = 0;
+        }
+        
+        function show(){
+            for(var i=0; i<oImgs.length; i++){
+                oImgs[i].className = "";
+                oLis[i].className = "";
+            }
+            oImgs[now].className = "one";
+            oLis[now].className = "one";
+        }
+        
+        function go(){
+            timer=setInterval(play, 1000);
+        }
+        go();
+        
+        container.onmouseover = function(){
+            clearInterval(timer);
+        }
+        
+        container.onmouseout = function(){
+            go();
+        }
+        
+        })();
+    </script>
+</body>
+
+</html>

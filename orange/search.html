@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="橙子vr是一款提供沉浸式3D视频播放、VR游戏下载、VR硬件评测资讯的虚拟现实内容聚合平台。">
+    <meta name="keywords" content="橙子vr,供沉浸式3D视频播放, VR游戏下载, VR硬件">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.bigautocomplete.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bigautocomplete.js"></script>
+    
+    <title>搜索</title>
+    <script>
+        $(function(){
+	$("#tt").bigAutocomplete({
+		width:543,
+        data:[{title:"橙子",result:{ff:"qq"}},
+        {title:"橙(cheng)子(zhi)的申请一份WEB前端的工作！"},
+		{title:"橙子VR"},
+		{title:"在橙子树林里捉迷藏的小丑(视屏)"},
+		{title:"橙子历险记(视屏)"},
+		{title:"橙子的一百种吃法(视屏)"},
+		{title:"中国最强"}],
+		callback:function(data){
+			alert(data.title);	
+		}
+	});
+
+})
+    </script>
+</head>
+
+<body>
+    <div class="demo">
+        <form action="#" method="post" name="searchform" id="searchform" class="searchinfo">
+            <ul>
+                <li><input type="text" id="tt" placeholder="请输入'橙子/橙/子'！" class="text" /></li>
+                <li><input type="submit" value="搜索" class="button" /></li>
+            </ul>
+        </form>
+    </div>
+    <ul class="tip">
+        <li><p>大家都在搜</p></li>
+        <li><p>虚拟现实<p><a href="#">轩子</a></p></p></li>
+        <li><p>沉浸式格斗<p><a href="#">篝火怪谈</a></p></p></li>
+        <li><p>恐龙<p><a href="#">过山车</a></p></p></li>
+    </ul>
+    
+
+</body>
+
+</html>
